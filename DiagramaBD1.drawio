@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Sistema de Berçário" id="Cmt_WOJan5SlAJXzCM4K">
+    <mxGraphModel dx="835" dy="633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GccvByRFKDDbLqx_yj-T-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="BEBÊ&#xa;id_bebe (PK)&#xa;nome&#xa;data_nascimento&#xa;sexo&#xa;peso_nascimento&#xa;observacoes" vertex="1">
+          <mxGeometry height="120" width="180" x="380" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="GccvByRFKDDbLqx_yj-T-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="RESPONSÁVEL&#xa;id_responsavel (PK)&#xa;nome&#xa;CPF&#xa;telefone&#xa;endereço&#xa;parentesco" vertex="1">
+          <mxGeometry height="120" width="180" x="80" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="GccvByRFKDDbLqx_yj-T-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="SALA&#xa;id_sala (PK)&#xa;nome_sala&#xa;capacidade" vertex="1">
+          <mxGeometry height="90" width="180" x="380" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GccvByRFKDDbLqx_yj-T-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="REGISTRO&lt;br&gt;id_registro (PK)&lt;br&gt;data_hora&lt;br&gt;tipo_cuidado&lt;br&gt;observacoes" vertex="1">
+          <mxGeometry height="120" width="220" x="700" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="GccvByRFKDDbLqx_yj-T-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ENFERMEIRA&lt;br&gt;id_enfermeira (PK)&lt;br&gt;nome&lt;br&gt;CPF&lt;br&gt;cargo&lt;br&gt;telefone" vertex="1">
+          <mxGeometry height="120" width="180" x="1000" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="GccvByRFKDDbLqx_yj-T-6" edge="1" parent="1" source="GccvByRFKDDbLqx_yj-T-2" target="GccvByRFKDDbLqx_yj-T-1" value="N:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GccvByRFKDDbLqx_yj-T-7" edge="1" parent="1" source="GccvByRFKDDbLqx_yj-T-3" target="GccvByRFKDDbLqx_yj-T-1" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GccvByRFKDDbLqx_yj-T-8" edge="1" parent="1" source="GccvByRFKDDbLqx_yj-T-1" target="GccvByRFKDDbLqx_yj-T-4" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GccvByRFKDDbLqx_yj-T-9" edge="1" parent="1" source="GccvByRFKDDbLqx_yj-T-5" target="GccvByRFKDDbLqx_yj-T-4" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
